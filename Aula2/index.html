@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imersão de IA Gemini</title>
+    <style>
+        body {
+            background-color: rgb(26, 28, 30);
+            color: white;
+            font-family: sans-serif;
+            padding: 20px 10px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .prompt {
+            background-color: rgb(40, 42, 45);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .prompt strong {
+            font-weight: bold;
+        }
+        .resposta {
+            background-color: rgb(32, 45, 87);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+		footer {
+			text-align: center;
+			margin-top: 20px;
+			font-size: 14px;
+			color: #ccc; /* Cor cinza claro para o rodapé */
+		}
+    </style>
+</head>
+<body>
+    <h1>Imersão de IA Gemini - Alura & Google</h1>
+    <h2>Técnicas de Prompt: Clareza, Concisão, Palavras-Chave, Apelo, Precisão, Voz Ativa, Tempo Presente</h2>
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br>
+        Por unanimidade, os três ministros presentes à 5ª turma do STJ votaram nesta terça-feira (7) para manter a prisão de Fernando Sastre de Andrade Filho, 24, motorista do Porsche envolvido no acidente que matou um homem e deixou outro ferido. A corte também determinou que ele seja transferido para a penitenciária de Tremembé (SP), atendendo a um pedido da defesa.
+        <br><br>
+        <strong>Título:</strong><br>
+        Por unanimidade, Turma do STJ mantém prisão de motorista do Porsche
+    </div>
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br>
+        O plenário do TSE (Tribunal Superior Eleitoral) elegeu na noite desta terça-feira (7) a ministra Cármen Lúcia como próxima presidente da corte para o biênio 2024/2026. Também foi escolhido como vice-presidente o ministro Nunes Marques. Com isso, Cármen presidirá a corte eleitoral a partir de junho deste ano, e durante as eleições municipais de outubro.
+        <br><br>
+        <strong>Título:</strong><br>
+        Cármen Lúcia é eleita presidente do TSE; posse será em junho.
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br> 
+        Um jacaré foi avistado por moradores do bairro Menino Deus, em Porto Alegre, em meio ao desastre climático que atinge o estado.
+        <br><br>
+        <strong>Título:</strong><br>
+        Jacaré é visto nadando em bairro de Porto Alegre após chuvas. 
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br> 
+        O Borussia Dortmund venceu o PSG por 1 a 0 nesta terça (7), no Parc des Princes, em Paris, pelo jogo de volta da semifinal da Liga dos Campeões. 
+        <br><br>
+        <strong>Título:</strong><br>
+        PSG manda 4 bolas na trave, Borussia se segura e vai à final da Champions. 
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br> 
+        A juíza da Flórida Aileen Cannon, encarregada do caso contra Donald Trump por suposta gestão indevida de documentos sigilosos, adiou, nesta terça-feira (7), por prazo indeterminado o julgamento do ex-presidente sobre o tema, de acordo com documentos judiciais consultados pela AFP. 
+        
+        O processo contra Trump sobre este caso devia começar em 20 de maio, mas Cannon disse que isso não seria possível devido ao alto número de moções apresentadas perante o tribunal. A magistrada não informou nenhuma data para o início do julgamento. 
+        
+        O adiamento é um duro golpe para o procurador especial Jack Smith, que apresentou as acusações contra Trump, e torna improvável que o julgamento  ocorra antes das eleições presidenciais de novembro, nas quais o ex-presidente é o candidato do Partido Republicano.
+        <br><br>
+        <strong>Título:</strong><br>
+        Julgamento de Trump por gestão indevida de documentos sigilosos é adiado. 
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br>
+        O economista e blogueiro Paulo Renato de Oliveira Figueiredo Filho se negou a responder pergunta sobre a ditadura brasileira feita por deputada norte-americana durante audiência realizada no Congresso dos Estados Unidos. Eles discutiam a liberdade de expressão no Brasil.
+        <br><br>
+        <strong>Título:</strong><br>
+        Deputada dos EUA confronta Paulo Figueiredo: 'É contra a ditadura militar?'
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br>
+        Perto de completar 95 anos — faz aniversário no próximo 11 de abril —, Almino Affonso diz em tom de piada que, às vésperas dos 60 anos do golpe militar, o telefone "milagrosamente" voltou a tocar. 
+        
+        "Descobriram que sou a última testemunha", diz, em referência ao fato de, entre os membros do primeiro escalão do governo deposto em 1964, ser o único ainda vivo.
+        
+        Naquele ano, ele estava ao lado do então presidente João Goulart, primeiro como ministro do Trabalho e Previdência Social e depois como deputado federal na liderança da bancada do PTB (Partido Trabalhista Brasileiro) na Câmara. 
+        <br><br>
+        <strong>Título:</strong><br>
+        'Dizer que Bolsonaro não tem a ver com 8/1 é imbecil', diz ministro de 64 
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br> 
+        A Justiça de São Paulo decidiu que a sede da Igreja Mundial do Poder de Deus, de Valdemiro Santiago, irá a leilão no dia 24 de abril para pagar uma dívida de aluguel de R$ 37.451,94. 
+        
+        É uma das maiores derrotas judiciais da igreja, que enfrenta diversos processos de inadimplência. 
+        
+        A decisão ocorreu no dia 26 de fevereiro e foi assinada pelo juiz Edson Lopes Filho. O magistrado afirma no documento que será realizada uma "alienação judicial eletrônica", pois é uma "solução mais rápida" para o "pagamento de credores".
+        <br><br>
+        <strong>Título:</strong><br>
+        Justiça manda leiloar sede da Mundial para quitar aluguel de R$ 37 mil
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br>
+        Referência internacional de vacinação desde a ditadura militar, o Brasil acabou vítima de sua própria eficiência: impulsionado por uma falsa sensação de segurança e pela disseminação de fake news, o brasileiro vem abandonando o hábito de se vacinar. Sob o risco de que doenças já erradicadas retornem, o governo Lula gasta bilhões com imunizantes, mas o aumento da cobertura vacinal continua longe de atingir a meta de 95% do público alvo.
+        <br><br>
+        <strong>Título:</strong><br>
+        Hábito de se vacinar cai desde 2016, e governo não consegue cumprir meta
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br>
+        A Ambev anunciou que vai parar a produção de cerveja na fábrica em Viamão, na grande Porto Alegre, para envasar água potável e doar à população do Rio Grande do Sul. 
+        
+        O que aconteceu 
+        
+        Empresa diz que serão cerca de 850 mil latas de água de 473 ml produzidas por dia na cervejaria de Viamão. Parceria foi feita com a empresa Ball, líder global na produção de latas de alumínio, que disponibilizou as latas de 473 ml. 
+        
+        Distribuição da água terá início na quarta-feira (8). O insumo será enviado ao governo local e à Defesa Civil do RS, que vão entregar a água às pessoas afetadas pela chuva.
+        <br><br>
+        <strong>Título:</strong><br> 
+        Ambev suspenderá produção de cerveja em fábrica no RS para envasar água 
+    </div> 
+
+    <div class="prompt">
+        <strong>Matéria:</strong><br> 
+        A Netflix anunciou nesta terça-feira (7) que as gravações da segunda temporada de Wandinha já começaram. O streaming também revelou os novos nomes que farão parte do elenco. 
+        
+        Os integrantes da família Addams, Gomez, Mortícia e Pugsley, passam a fazer parte do elenco principal da produção e estarão no centro da trama da nova temporada. 
+        
+        Além de Jenna Ortega, Emma Myers, Percy Hyne White, Hunter Doohan, outros atores voltarão para o segundo ano da série, como Catherine Zeta-Jones, Luis Guzmán, Emma Myers, Joy Sunda, Hunter Doohan, Victor Dorobantu e Moosa Mostafa. 
+        
+        Nomes como Christopher Lloyd, Steve Buscemi, Billie Piper, Noah Taylor, Thandiwe Newton, Haley Joel Osment, Joonas Suotamo e mais entraram para o elenco da série. 
+        
+        “Estamos muito animados com toda a família Addams entrando para a Escola Nunca Mais nesta temporada, juntamente com um elenco dos sonhos, com vários ícones e novos rostos”, disseram os criadores do seriado, Al Gough e Miles Millar.
+        <br><br>
+	</div>
+	<div class="resposta">
+        <strong>Título:</strong><br> 
+        Wandinha: 2ª temporada inicia gravações com elenco reforçado por Família Addams e novos atores
+    </div> 
+
+    <div class="prompt">
+        Explique se existe alguma técnica ou padrão para definição do Título de cada Matéria, e que técnica ou padrão você usou para definir a sua resposta.
+    </div>
+
+    <div class="resposta">
+        Sim, existem técnicas e padrões para definir o título de uma matéria jornalística. O título é crucial para atrair a atenção do leitor e transmitir a essência da notícia de forma concisa e precisa. 
+        <br><br>
+        **Técnicas e Padrões Comuns:**
+        <ul>
+            <li>Clareza e Concisão</li>
+            <li>Palavras-Chave Relevantes</li>
+            <li>Apelo e Interesse</li>
+            <li>Precisão e Fidelidade</li>
+            <li>Voz Ativa</li>
+            <li>Tempo Presente</li>
+        </ul>
+        <br> 
+        **Técnica Usada para Definir o Título da Resposta:** 
+        <br>
+        Para definir o título "Wandinha: 2ª temporada inicia gravações com elenco reforçado por Família Addams e novos atores", utilizei as seguintes técnicas:
+        <ul>
+            <li>Palavras-Chave Relevantes</li> 
+            <li>Apelo e Interesse</li>
+            <li>Precisão</li>
+            <li>Voz Ativa</li> 
+            <li>Tempo Presente</li>
+        </ul> 
+    </div> 
+
+    <div class="prompt">
+        Agora escreve uma sigle page HTML com seu respectivo CSS, incluindo no corpo do html todos os prompts informados e as sua resposta para cada prompt, incluíndo este prompt. 
+        As cores de background e texto inclusive a sua formatação devem ser identicas as usadas neste Chat, 
+        O Título Principal da página deve estar em destaque e deve fazer referência a Imersão de IA Gemini da Alura em parceria com o Google, deve conter também o nome das técnicas de prompt utilizada.
+        <br><br> 
+    </div>
+	<div class="resposta">
+		(Você está visualizando a página HTML gerada com as instruções solicitadas.)
+	</div>
+	<footer>
+		<p>© 2024 Imersão de IA Gemini - Alura & Google - Desenvolvido por Francisco Florentino</p>
+	</footer>
+</body>
+</html>
