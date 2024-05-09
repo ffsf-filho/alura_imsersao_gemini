@@ -1,44 +1,114 @@
 body p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: rgb(16, 25, 38);
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+body {
+  background-color: rgb(16, 25, 38);
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
-
-header{
-    display: flex;
-    justify-content: flex-start;
-    padding: 1.5em;
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.5em;
 }
 
-.div_imgLogo{
-    width: 15%;
+.div_imgLogo {
+  width: 15%;
 }
 
-.div_imgLogo img{
-    width: 10em;
-    height: 2em;
+.div_imgLogo img {
+  width: 10em;
+  height: 2em;
 }
 
-.div_titulo{
-    width: 85%;
-    align-content: center;    
+.div_titulo {
+  width: 85%;
+  align-content: center;
 }
 
-.div_titulo p{
-    font-size: 2em;
-    font-weight: bold;
-    color: white;    
+.div_titulo p {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
 }
 
-.main{
-    padding: 1.5em;
-    color: white;
-    border-radius: 10px;
-    background: rgb(12, 84, 198);
+.main {
+  padding: 1.5em;
+  color: white;
+  border-radius: 10px;
+  background: rgb(12, 84, 198);
+}
+
+.sec_painel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.div_texto_painel {
+  width: 100%;
+}
+
+.div_texto_painel p {
+  width: 100%;
+  font-size: 1.2em;
+  color: white;
+  text-align: justify;
+}
+
+.div_painel {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  padding: 1.5em 1em 1.5em 1em;
+  width: 100%;
+  height: 50vh;
+}
+
+.div_clendario {
+  width: 50%;
+  height: 100%;
+}
+
+.div_clendario img {
+  width: 100%;
+  height: 100%;
+}
+
+.div_aulas {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: space-around;
+  width: 50%;
+  height: 100%;
+}
+
+.div_aulas a {
+  background: rgb(0, 5, 26);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding-top: 1.7%;
+  width: 15em;
+  height: 2em;
+  margin: 1em;
+  border-radius: 25px;
+}
+
+.div_aulas a:hover {
+  background: rgb(18, 32, 78);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc; /* Cor cinza claro para o rodapé */
 }
